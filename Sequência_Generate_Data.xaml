@@ -1,0 +1,182 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequência_Generate_Data" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1150,2004" sap2010:WorkflowViewState.IdRef="Sequência_Generate_Data_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="68">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="49">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequência_Generate_Data" sap:VirtualizedContainerService.HintSize="688,1939" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: 2022 DHL FASTEST LAP AWARD - Opera" sap:VirtualizedContainerService.HintSize="626,1817" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1e2285c5-815d-4727-a8ab-bb8c81f8f881" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="592,1517" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              <Variable x:TypeArguments="sd:DataTable" Name="FastestLaps" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Standings'" sap:VirtualizedContainerService.HintSize="530,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e2285c5-815d-4727-a8ab-bb8c81f8f881" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1110, 127, 128, 71" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Standings'" FullSelectorArgument="&lt;ctrl name='F1 - The Official Home of Formula 1® Racing' role='document' /&gt;&lt;ctrl name='Standings ' /&gt;" FuzzySelectorArgument="&lt;ctrl name='F1 - The Official Home of Formula 1® Racing' role='document' /&gt;&lt;ctrl name='Standings ' role='link' automationid='' check:text='Standings' /&gt;" Guid="58197cbd-694d-4069-9c7d-7c28e8379d9b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIQAAABLCAYAAACx+i/GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS5SURBVHhe7Zy/b+JIFMfT7P0bVNTXnHRlmkg0212RgmKLK1JsEYlmJf6BSGki0SCq1VaICl2V65IudKGDjr09dCy7m/iWAAay8PaNPbbn2U5i7PwS+T7pI8TwGA/2Z96MLSVbhEAYASEQIrb++WWLAPCAEEAAIYAAQgABhAACCAEEEAIIIAQQQAgggBBAACGAAEIAAYQAAggBBBACCCAEEEAIIIAQQAAhgABCAAGEAAIIAQQQAgggBBBACCCAEEAAIYAAQgABhAACCAEEEAIIIIRDjj7/sUtfX/8a89nLIrsQ+V0atQa01P9wIhLd90FuuUmL7hldFY3vPwGXpxYPrENXfts+2arJHOsLJbMQVsvmM2nTj/YxjRv1KIdvgvwPHc61yC7JPh6bqBCoEB4ZhdAzyzqhy9jPPXReJAI5rrq6SYRNy26dLvJGX45UMcEHmNcKQZ5CV6+VTpFxe4VwpYkJq0fTUs7PU/SLVZoN1MSICb/PHF00OrSMTTPH8rRkFGJPX2i+sIfb1I/NUWzTZa1O065bTRZ/exWkSpc7bs63Q6OqOBzTXF+TVetd0JcjhNmHoqkvyIAm/nKUo/9vqF7uOJIIMaCZ8T01poVqts/pu/fd/AHNnMMMaC7GdEY/uNnvs3zmiLnqnRg5Hgf0zevvDvqlI/r+Oqa9yO0hUdOQeckY8gXyZyCf1evWMY3KBfovJtc9yQmWjPweTXrqLOswK9BNy07pxNnHLD54bUc0V9/lCxIWNckeIprj0m/0uN04fuWc36vjhi/Ge1qoD7w+tcizQzNnXX6nUZvPi92hcTE4Xv9tk665edWu0kDkr0/2TSWj7Jx2wxtLi2fxEQ2NvCRCqPLrVgauAo1dGjtLiXFhkgpRPHZm6PJ0X+YxWYSIHP+m8YSF0ONTudftE5rU3tGXnTQzusDLayBFv8S/k98uWQbzXKflXoQI4M3Znwc0Pu04g1Sxah/5M/QuIYYVXWa5/E7L7gbP3VukEEK/fzZCMMOKXnLMsHtkV0J7nzspcKVQHdlOdV625MTLwj0LYfKGpgP1i4OTepsQn7n0OjPIOqeRsUamFuJRKwTRvGLkOESF8PmtQF/LVZrwxHGrRo/Gei+VHJ58pSqNSrft3dbnAYXI0VgttxRswC5uFGLXlUdt1sw7Cia1EA+0h4gcf6dO19xCvSZZRb519eF1XbXHCWEQ2ZM8MZmFiN4duEz07Z65ZHgbsGW7qfO8u4xtLQ/v6v+S/cxCVSa5EPdxl5FACGZY09UtLrw+d/ZpZIzBxVtCuCqGJsJTkVmI+OcHKmKeIfhrnxfBie2/rUfXVz/SCMFkfg6RTAiH/DZ9iasQPCGcz/X4wrGyOjTR+6XnwAMuGS8F9xmLnPlchdquiPNa9mcDjwmEyIyuLuHgxkVjL/Z5zHMGQgABhAACCAEEEGJD+fTKff0Yar8LCLGhQAgg0UKsC4TYcD7FtN0GhNhA/GUiRZWAEBvGv+qVRfiIJQOYInibynWBEBuCJ0LayuABITYIZ+8AIV4upgBpl4gwEAIIIAQQQAgggBBAACGAAEIAAYQAAggBBBACCCAEEEAIIIAQQAAhgGBL/+EZAuEEhEAYQfQT2//6Dkgp6DQAAAAASUVORK5CYII=" InformativeScreenshot="b3b6fd44bc9810a73808233f12a773a7.png" ScopeSelectorArgument="&lt;wnd app='opera.exe' cls='Chrome_WidgetWin_1' title='F1 - The Official Home of Formula 1® Racing - Opera' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'DHL FASTEST LAP AWARD'" sap:VirtualizedContainerService.HintSize="530,166" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e2285c5-815d-4727-a8ab-bb8c81f8f881" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1062, 385, 385, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'DHL FASTEST LAP AWARD'" FullSelectorArgument="&lt;ctrl name='DHL FASTEST LAP AWARD' role='link' /&gt;" FuzzySelectorArgument="&lt;ctrl name='2022 RACE RESULTS' role='document' /&gt;&lt;ctrl name='DHL FASTEST LAP AWARD' role='link' automationid='' check:text='DHL FASTEST LAP AWARD' /&gt;" Guid="9a3aabda-eef2-4975-9c14-321657e2d9da" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYUAAAApCAYAAADaijVpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATNSURBVHhe7dk9a+NYFMbx+RJu5wO4tKvJNt7OnTp1cZVUURXSDGmCmtQqAi4CKaYwuAgEVhBYQrYwaUIqp8pUTudOCwsuzx5JV3euXuzI4A2b8P/Bxci2dPV6nivpiwAAYBAKAACLUAAAWIQCAMAiFAAAFqEAALAIBQCARSgAACxCAQBgEQoAAItQAABYhAIAwCIUAAAWoQAAsD5YKCzlevRVOp1q68s371ii+Kck5p+Zxwv97UCul2a6ankjI51/VPzBTEeP+WQrZp76OhWt3v9K18vrfpWudyGPK/NlRTKfyon/u3Qblvlbw3f1pstOF5Ttg6bfi2b+p3bWZ4k5ZtGTmW7jVeJgT5e3J0H8ar6rWLtdv86FNbu2bHErQU/n6x1LvDDfZV5l4un3h7e6BRWrJ4m8vnS6vozn9V4WE1/XQ5dXOhlX8hj5um/74um+aFy3TedSz5PR6Y282Bm3vBaAlj5mKAQ/ZDZ7cNq9XEcH0tOLYuhecO8YCsGVuz5ue5ZlqQI8y3io6xleSqifg6YCsZiKn26LbmdcW96fEv/xlzN9K2FavLzzyn9NUcj2gS9h7P7mNvO/XfZZsn0oJHffpds9kig60iK65vit3S49F8L9rPie3L1VFhO5O+lL9/BCokMt8qObUgDMx0Pt40xmlQO0mOxLZ3Amp4FuV2WefJkN388vZdjxJByf6+dQz7HaUd98LsUX4qcDiZN7s4+3vBaAlj5mKKwpMKvZWVYMwuIqfsdQaDvPanau67gvEx2VZsWlNqLURV4fbF7vErNPasXJeGsfGDvts2TbUNARuq/FL3yQ1epBQi2Eg/Gz+c2xcbs0eAfapy2ga2RBmJ8v+XEZ6sjf/JbSPtLzqXxslxIf6rJPH2Sp4VULDV3nUz0fvIl7h7OSWaih409lYbavE9zW1+2Nc+kx0vns3diW1wLQ0qcKBZEnCfWi6kamiPzvQiGROB1dFgUhuZVA5/VLBUQXGR/pevfl8Pq1xUhvR6Gwyz5LtgwFHVEPnOKcjda75+XCm9q4Xa95n02PfhzZsgeXkneVB0kWRtm0MgW+HEr5OTbS/ZSGitcmSMxxDkz6J/Gxrns+MCjZYSjUrgWgpU8XCpFeCHaEaArH5CWRJGloL9OdhUJ417B802yRMY9oiuJgHzXYwmSkz6yHaQHQ1vMkOJ1KPF9XrNuFwtp9kJil7rLPkm1CwYyo3f2RhYS7z4wN27WcXchQ5xle/TR/btBwF5I/LnLv3BoeBWVBoEU/W0EnIIz8fUL57qF2R5jcy4nOV7sDqpx/K3e7lk8yTu8wvPRuI7XltQC09DlDobiIs8Kh02+093rR3DTqzR9bNN3mJzKPLysvfvfET182lq7yNqFQzN/U3JfDO+qzZItQaLxzMo9bskcvjo3b1ZdvwdR5KVvXOFo3oe32nz9W+y7F64n8jqoo+r8eJeVdmW0tFeKGO5Ai/Kp3QM75l/fjbpO23oFc2RfbW14LQEtfVv/8LTQajUajpY1QoNFoNJptH+zxEQDgv0QoAAAsQgEAYBEKAACLUAAAWIQCAMAiFAAAFqEAALAIBQCARSgAACxCAQBgEQoAAItQAABYhAIAwCIUAAAWoQAAsAgFAIBFKAAALEIBAGCI/AupSxj4atT/YQAAAABJRU5ErkJggg==" InformativeScreenshot="fbc0bbb10d158479cc4d2c501b0a635c.png" ScopeSelectorArgument="&lt;wnd app='opera.exe' cls='Chrome_WidgetWin_1' title='2022 RACE RESULTS - Opera' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[FastestLaps]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='GRAND PRIX' ReferenceName='GRAND PRIX' ReferenceIdx='0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='DRIVER' ReferenceName='DRIVER' ReferenceIdx='1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CAR' ReferenceName='CAR' ReferenceIdx='2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='TIME' ReferenceName='TIME' ReferenceIdx='3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="530,166" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1e2285c5-815d-4727-a8ab-bb8c81f8f881" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="608, 643, 1389, 1156" DesignTimeScaleFactor="1" ElementType="Table" FriendlyName="'table'" FullSelectorArgument="&lt;ctrl name='2022 DHL FASTEST LAP AWARD' role='document' /&gt;&lt;ctrl idx='2' role='table' /&gt;" Guid="82d69543-1ac6-4d9e-9411-bb6aa6b262ca" InformativeScreenshot="90dd0ed5e2b9736e651d20329f0e521c.png" ScopeSelectorArgument="&lt;wnd app='opera.exe' cls='Chrome_WidgetWin_1' title='2022 DHL FASTEST LAP AWARD - Opera' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,776" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="F1 Web Scrapping\DriversStandings.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Drivers" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="496,498" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[FastestLaps]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,375" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="FastLap" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,249" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:Int32" Name="CurrentCell">
+                                <Variable.Default>
+                                  <Literal x:TypeArguments="x:Int32" Value="1" />
+                                </Variable.Default>
+                              </Variable>
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:WriteCell Cell="[&quot;F&quot; + (CurrentCell.ToString)]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="338,125" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[Drivers.Sheet(FastLap.Item(&quot;Driver&quot;).ToString).ToString]" Text="[FastLap.Item(&quot;Time&quot;).ToString]" WorkbookPath="F1 Web Scrapping\DriversStandings.xlsx" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1912, -8, 2576, 1056" Arguments="https://www.formula1.com" FilePath="C:\Users\Georg\AppData\Local\Programs\Opera GX\opera.exe" IconBase64="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" InformativeScreenshot="1e9fda7056f35d71bc0d9ed1dafd0068.png" Selector="&lt;wnd app='opera.exe' cls='Chrome_WidgetWin_1' title='2022 DHL FASTEST LAP AWARD - Opera' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
