@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1436,4168</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1436,4144</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Sequência_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -113,31 +113,31 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequência_Data" sap:VirtualizedContainerService.HintSize="1446,4103" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequência_Data" sap:VirtualizedContainerService.HintSize="1446,4079" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1384,3981" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="F1 Web Scrapping\F122.xlsx">
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1384,3957" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="F1 Web Scrapping\F122.xlsx">
       <ueab:ExcelApplicationCard.Body>
         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1350,3699" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1350,3679" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: F1 - The Official Home of Formula 1® Racing" sap:VirtualizedContainerService.HintSize="1288,3577" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: F1 - The Official Home of Formula 1® Racing" sap:VirtualizedContainerService.HintSize="1288,3557" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1254,3350" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1254,3331" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="GPs" />
                     </Sequence.Variables>
@@ -146,7 +146,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Standings'" sap:VirtualizedContainerService.HintSize="1192,167" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V3">
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Standings'" sap:VirtualizedContainerService.HintSize="1192,166" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.formula1.com/en.html" DesignTimeRectangle="758, 154, 106, 32" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Standings'" FullSelectorArgument="&lt;webctrl aaname='Standings' class='link-text' parentid='primaryNav' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Standings' class='link-text' parentid='primaryNav' tag='SPAN' type='' check:innerText='Standings' /&gt;" Guid="93a9bc89-3ea2-4144-bc05-fc0aa86b94ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAkCAYAAABomA/xAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQoSURBVGhD7Ze/T9tAFMeZ+n9kzNixK1IHsjEWiQF1qlAnOkSCgYEOlWCoFKQODB2SrRmROhSJASGGCDGgiAGhVmqUNrRY5Jfzg+Tb9+yzfbYvwU2bwtE76aMol+fzxZ97784zXx7NwKAfRpymGHGaYsRpihGnKUacphhxmvIAxaXw/dkCfsw/Vvz2cAiLSy+gflDFoA91O9sJYteL6J0eorEkXX8HWPsWTayMht+3Apu75Lk+QELirAOb/rGNm9IumvlCnDfPg4vflynWgv0quP4uiIv77zJOrFRrD5YUEEfExVogsXEmuuTWtzE4LeAqLY3lyFc0ukF3OxPEMaIaDJXVYHzGuXIVzbpAO5vy45jKYg6dr7yAFc0fM4WrfBkDZZg8l+khiVuGfck3JgGvZ1GRgsLMwnpXQPvMzc7eRy8jc7Dm3Jifb6QsddhF1xkbGB6sBmM54uQxmKJ4cFW0/DKcwvWRuhq480giroqOdB3Pqcfd9jGuvWvTG+g0uK+KbmhOh7ihbn/M9UMM6evwfE+K8djAT2+8W6hkN3E9r+hfpP7IgooSKpU1epA8IafRv+8f7KK+lkFVivFwH0aCUpleRutcLE3OFjmjR5Xb7B4G9Evvvde3iS5fSw8uuqCS7HHxGJdK/oL6pfu/PabvfN/oQ9tBj3/wxhQLrvNajvldnqB+Qs/FLqO5GNyv8rLIxQnDkxy+heLDhA8nBNtun0YOKH2LsmITNSkuiTguO10O46zKL6DplFDpAY4S9yoibmnXWfGD/ZVwHPEn4mL3HzWfqDgxP34u/dIeWturuHw6PkPUZNA4DeRVsvQ/6euApMnPWkVMXABt8i820Nwv44bLB7Xhyaa/4m8TV9ui8sLyqey0192Dgrv3TSBOfL834ojaFpVaUf791riAvRXZm28lQ5lH86M04/17cBROkFGMESfzHO1vPLPgz48T951KjrMirWPUpRo+sbh/lXE7/B3ovpViHOLifJ5k8GMthxYtcLdKXaAp9vrkUJJkc6hnx50twiQUl0LznObUDzbyq0+jxC24khsUK58giYnFTWmPi91/ruBsw/hchLVErxQ+tO9wv0qcRGzPnCIhcfHToEuLj+E0JblUehv5oFQUcd6pclZIplPch/A4nUjWJhf3N06VCcQRtW2qFo4lRfPGnFtBXZqDizil0uKuRxbsNAiJU75/cVO9g3FtLvFMvRY8gMrLQrz++20SccQfv8clE+eQnsWlKuNo4Tq/i/lF2/CyjJbYz6dNwlL5v+C+o4YzibK65Fac7vYkJ8fpYMSFENkabdTZyy8r32fvCiNOU4w4TTHiNMWI0xQjTgM+Rz4ZI04jjLgHgBGnCXK2MUacphhxGhDNNsaIu0eoBKn6GCPunjJKmIcRd49gWbcJ8zDiNMWI05IZ/ALXJpvhb/hsQAAAAABJRU5ErkJggg==" InformativeScreenshot="4fde353a36bf1244c2a15ecccdc9891f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='F1 - The Official Home of Formula 1® Racing' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -157,7 +157,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NGetText DisplayName="Get Text 'Races DRIVERS'" sap:VirtualizedContainerService.HintSize="1192,167" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" TextString="[GPs]" Version="V3">
+                    <uix:NGetText DisplayName="Get Text 'Races DRIVERS'" sap:VirtualizedContainerService.HintSize="1192,166" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" TextString="[GPs]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.formula1.com/en/results.html" DesignTimeRectangle="1498, 552, 384, 867" DesignTimeScaleFactor="1" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' idx='3' tag='UL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='resultsarchive-filter ResultFilterScrollable' tag='UL' aaname='                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ' /&gt;" Guid="f24b64d1-55c4-4380-9b15-7c72fc70fe21" InformativeScreenshot="55e63879450a5af0977c26dd72308ab6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='2022 RACE RESULTS' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -197,13 +197,13 @@
                         ", "")]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1192,2444" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[outGrand_Prixes]">
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1192,2428" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[outGrand_Prixes]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:String">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:String" Name="RaceWeek" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="1156,2308" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="1156,2293" sap2010:WorkflowViewState.IdRef="Sequence_16">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Int32" Name="Counter" />
                             </Sequence.Variables>
@@ -212,9 +212,9 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[Counter = 2]" sap:VirtualizedContainerService.HintSize="1094,2073" sap2010:WorkflowViewState.IdRef="If_5">
+                            <If Condition="[Counter = 2]" sap:VirtualizedContainerService.HintSize="1094,2058" sap2010:WorkflowViewState.IdRef="If_5">
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="400,399" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                <Sequence sap:VirtualizedContainerService.HintSize="400,398" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -228,7 +228,7 @@
                                       <InArgument x:TypeArguments="x:Int32">0</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <uix:NClick ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="338,167" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V3">
+                                  <uix:NClick ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://www.formula1.com/en/results.html" DesignTimeRectangle="1922, 667, 18, 9" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl idx='6' isleaf='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='BUTTON' class='filter-controls-down icon-arrow ScrollDownTrigger active' aaname='' /&gt;" Guid="b5da3922-8318-4f5d-8de2-f0ad5ae7900b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAANCAYAAACtpZ5jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADZSURBVDhP1ZIxC4JAGIb7iRIIghDcbkubNOYo5A+wtSl/gC0N0tLkFoiTLk4Hwi2C8HaXF6XoaUJDz3R8eg9373sL/AgpZqC0Wc2F5gUquRY04uoGzyDwojl2hvRkQyc+4g/zO4oyhm9pWB9isFrOxqgprq4Jcxci6+xpZyx+3BPo2wApk7MhRg7SW152dmCuHIS5HHTJQzhEHV2vWMCSAHZP7jTyQAwbQaK+0qD4Seu6vKTjBprFSyrldwVqseCV+1LjJV1QTCx2XCzJ7il/WNOZLP6WfxMDD5qXSmPkRzW0AAAAAElFTkSuQmCC" InformativeScreenshot="20bb49cb9cc3355ba8d5d7519e179d19.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='2022 RACE RESULTS' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
                                         <uix:TargetAnchorable.Anchors>
@@ -242,20 +242,20 @@
                                 </Sequence>
                               </If.Then>
                               <If.Else>
-                                <Sequence sap:VirtualizedContainerService.HintSize="1012,1508" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                <Sequence sap:VirtualizedContainerService.HintSize="1012,1497" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ClickType="Single" DisplayName="Click on Grand Prix" sap:VirtualizedContainerService.HintSize="950,167" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V3">
+                                  <uix:NClick ClickType="Single" DisplayName="Click on Grand Prix" sap:VirtualizedContainerService.HintSize="950,166" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://www.formula1.com/en/results.html" DesignTimeRectangle="1539, 615, 76, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Bahrain'" FullSelectorArgument="[&quot;&lt;webctrl aaname='&quot; + RaceWeek +  &quot;' class='clip' tag='SPAN' /&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;ctrl name='&quot; + RaceWeek +&quot;' role='link' /&gt;&quot;]" Guid="4a4d528c-415d-4178-9971-a3876bc65e3c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAAVCAYAAADRhGlyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOMSURBVFhH7ZZPSxtBGMb7JfaaL7DHBS/SgzmZmy09JFCIIIgISiiEILRYMIRCQggSEYRSlBBySKCCkoASSiQgJF5iLm1BSMCDghDBQ8DD03d2J9mZ3Y1us7anfWCQmYyz7/zef/MKvjzJB+hRPkCP8gF6lA/QowSAtygvBaAo9qHNLyNR7GLAd8oaopULQ1U0vM1d0MxB19+xSOdk23xu0wWy7FuZCz4HWhm7HcbQMPsmjp3ze77Tqj6O1mdp3yxih32+ZlF7Wz/LtIfukI9CozVtaR+dB74sifNZ+o4bvsJkB/hhH42zpjDqKCejBCiAxcot3yvocg8hZQGpfJr+hsgoB4TTAnyXxpFki2FPYWOBACxg55JvFjSofYSqriGbWyObl1G+5j+IsgK8qWKF3W+3hNR8AGq87hAsbgEKlzBlv6ChIRpJDUq4hB55vhCmPetV+8enBWgxdix+nt2hhg1qsonhsImUGkAw3+W/CbICFOwbnqcRpCjf/GENhH8B8K6KGK3Hjo10GhzHybAoClf61NT/AkjZEKQsGEVmJx+CoqbRsLJ4AiBwj5M4BcX8NjrS/7kFmKTwHdxLo3fK0lNDoibXnV4xSobEcXTHFwZ1JMgQm9e5galT+Vxz1JGi3ycCfBxK+3uHlKa0X44Sng1ze+jwFQOo6eCxngTI5pTSFL2hXfEebgGyi9hGECvF35YG0cXOHE8XvjK+hNXr3EDns4XhCLCLLF1G3ksN61OdyoYgng2Rotg4eFnRS4yg5wCSegcsOMRsmjoC++gcbyNi8YiRrgEkDm/l/bUtfV3yuqcIpA6ZYU0jiM1a39gve1KXnq6ssbTlszvfGAgzrXW5AKgHCDUUE5hbgNY6x9X6Qr+pVBf0Gfcsu/SkIXrd0UBRz9XAPsqrLLLXUPjlQI83DEc7+JAyxRVAs6EYpeslACrbaLHJqLZUeERYRq/ColND6oyb7Bkg6dGEWLY874xsoCcUvQ2d7GnlWHQK6egSoF6SPrNvbqHx4Bag7R3YxEklraewusHeRxPqnKhRRIyeNC8BkOmB9rG0og7ZGj92J9Q5UVclROj8cXNzDZDEG4r6Po4VqvmK5Y3oqomor8OIZar4yYweFeuDCa98LqNDc6+/FECmgQFRXS0Z9ujZ4PRuE2Vx+t8AJA3be4jMkD0zy/h6KX9HAOhrGvkAPcoH6FE+QI/yAXoS8AeKI2E+uGb9ngAAAABJRU5ErkJggg==" InformativeScreenshot="9041c389b5de4afbfbd2b99508074d4a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='2022 RACE RESULTS' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
-                                  <uix:NCheckState DisplayName="Check App State 'No results'" sap:VirtualizedContainerService.HintSize="950,1179" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V3">
+                                  <uix:NCheckState DisplayName="Check App State 'No results'" sap:VirtualizedContainerService.HintSize="950,1169" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V3">
                                     <uix:NCheckState.IfExists>
-                                      <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="400,115" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                      <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -264,7 +264,7 @@
                                       </Sequence>
                                     </uix:NCheckState.IfExists>
                                     <uix:NCheckState.IfNotExists>
-                                      <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="496,951" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                      <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="496,943" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="ue:ISheetRef" Name="AddedGP" />
                                           <Variable x:TypeArguments="sd:DataTable" Name="Standings" />
@@ -274,13 +274,13 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ueab:InsertSheetX DisplayName="Insert Sheet" sap:VirtualizedContainerService.HintSize="434,198" sap2010:WorkflowViewState.IdRef="InsertSheetX_2" Name="[RaceWeek]" ReferenceNewSheetAs="[AddedGP]" Workbook="[Excel]" />
-                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Standings]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Column-0' ReferenceName='Column-0' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='POS' ReferenceName='POS' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='NO' ReferenceName='NO' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='DRIVER' ReferenceName='DRIVER' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CAR' ReferenceName='CAR' ReferenceIdx='4'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='LAPS' ReferenceName='LAPS' ReferenceIdx='5'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='TIME/RETIRED' ReferenceName='TIME/RETIRED' ReferenceIdx='6'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='PTS' ReferenceName='PTS' ReferenceIdx='7'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Column-8' ReferenceName='Column-8' ReferenceIdx='8'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='POS' attr='text' /&gt;&lt;column name='NO' attr='text' /&gt;&lt;column name='DRIVER' attr='text' /&gt;&lt;column name='CAR' attr='text' /&gt;&lt;column name='LAPS' attr='text' /&gt;&lt;column name='TIME/RETIRED' attr='text' /&gt;&lt;column name='PTS' attr='text' /&gt;&lt;column name='Column-8' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="434,167" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V3">
+                                        <ueab:InsertSheetX DisplayName="Insert Sheet" sap:VirtualizedContainerService.HintSize="434,195" sap2010:WorkflowViewState.IdRef="InsertSheetX_2" Name="[RaceWeek]" ReferenceNewSheetAs="[AddedGP]" Workbook="[Excel]" />
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Standings]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Column-0' ReferenceName='Column-0' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='POS' ReferenceName='POS' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='NO' ReferenceName='NO' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='DRIVER' ReferenceName='DRIVER' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CAR' ReferenceName='CAR' ReferenceIdx='4'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='LAPS' ReferenceName='LAPS' ReferenceIdx='5'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='TIME/RETIRED' ReferenceName='TIME/RETIRED' ReferenceIdx='6'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='PTS' ReferenceName='PTS' ReferenceIdx='7'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Column-8' ReferenceName='Column-8' ReferenceIdx='8'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='POS' attr='text' /&gt;&lt;column name='NO' attr='text' /&gt;&lt;column name='DRIVER' attr='text' /&gt;&lt;column name='CAR' attr='text' /&gt;&lt;column name='LAPS' attr='text' /&gt;&lt;column name='TIME/RETIRED' attr='text' /&gt;&lt;column name='PTS' attr='text' /&gt;&lt;column name='Column-8' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="a1db1d25-9468-4cdf-9b88-cd1ef15c3908" Version="V3">
                                           <uix:NExtractData.Target>
                                             <uix:TargetAnchorable DesignTimeRectangle="899, 661, 1037, 1155" DesignTimeScaleFactor="1" FriendlyName="'Pos No Driver Car Laps'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="28f10123-5a19-4245-a340-51aff3312375" InformativeScreenshot="106d364ad3102b68dbfa85fa17add438.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='FORMULA 1 GRAND PRIX DE MONACO 2022 - RACE RESULT' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
                                           </uix:NExtractData.Target>
                                         </uix:NExtractData>
-                                        <ui:FilterDataTable DataTable="[Standings]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="434,172" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Standings]" SelectColumnsMode="Remove">
+                                        <ui:FilterDataTable DataTable="[Standings]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Standings]" SelectColumnsMode="Remove">
                                           <ui:FilterDataTable.Filters>
                                             <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                               <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
@@ -293,7 +293,7 @@
                                             </scg:List>
                                           </ui:FilterDataTable.SelectColumns>
                                         </ui:FilterDataTable>
-                                        <ueab:WriteRangeX Destination="[AddedGP]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="WriteRangeX_2" IgnoreEmptySource="False" Source="[Standings]" />
+                                        <ueab:WriteRangeX Destination="[AddedGP]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="WriteRangeX_2" IgnoreEmptySource="False" Source="[Standings]" />
                                       </Sequence>
                                     </uix:NCheckState.IfNotExists>
                                     <uix:NCheckState.Target>
@@ -321,7 +321,7 @@
                         </ActivityAction>
                       </ui:ForEach.Body>
                     </ui:ForEach>
-                    <ueab:DeleteSheetX DisplayName="Delete Sheet" sap:VirtualizedContainerService.HintSize="1192,100" sap2010:WorkflowViewState.IdRef="DeleteSheetX_1" Sheet="[Excel.Sheet(&quot;Planilha1&quot;)]" />
+                    <ueab:DeleteSheetX DisplayName="Delete Sheet" sap:VirtualizedContainerService.HintSize="1192,99" sap2010:WorkflowViewState.IdRef="DeleteSheetX_1" Sheet="[Excel.Sheet(&quot;Planilha1&quot;)]" />
                   </Sequence>
                 </ActivityAction>
               </uix:NApplicationCard.Body>
